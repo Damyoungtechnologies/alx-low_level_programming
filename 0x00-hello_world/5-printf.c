@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
-*main - the entry point of my function
-*Return: returns zero when successful
+* main - Entry point
+* Return: if zero(0), successful
 */
 int main(void)
-{ printf("with proper grammar, but the outcome is a piece of art\n");
-	return (0);
+{
+printf("with proper grammar, but the outcome is a piece of art");
+return (0);
 }
