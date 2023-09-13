@@ -13,6 +13,7 @@ void times_table(void)
 		{
 			result = i * j;
 			printf("%d", result);
+			_putchar(',');
 
 		}
 	printf("\n");
