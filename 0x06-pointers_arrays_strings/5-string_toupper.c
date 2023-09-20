@@ -23,9 +23,8 @@ char *string_toupper(char *n)
 
 			n[i] = n[i] - 32;
 
-
+		i++;
 	}
-	i++;
 
 	return (n);
 
