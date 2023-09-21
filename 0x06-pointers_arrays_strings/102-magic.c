@@ -26,7 +26,7 @@ int main(void)
 
    */
 
-	*(p + 5) = 98;
+	*(p + 2) = 98;
 
   /* ...so that this prints 98\n */
 
