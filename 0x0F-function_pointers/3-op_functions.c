@@ -8,7 +8,7 @@ int op_mod(int a, int b);
 
 /**
  * op_add - Returns the addition
- * @a: The number 2
+ * @a: The number 1
  * @b: The number 2
  *
  * Return: The sum of a,  b.
@@ -41,8 +41,8 @@ int op_mul(int a, int b)
 }
 /**
  * op_div - Returns the division of two numbers.
- * @a: The first number.
- * @b: The second number.
+ * @a: The third number.
+ * @b: The fourth number.
  *
  * Return: The quotient of a and b.
  */
