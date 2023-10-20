@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - adds a new node at the beginning of a list_t list
+ * add_node - adds a new node at the beginning of a linked list
  * @head: double pointer to the list_t list
  * @str: new string to add in the node
  *
@@ -12,25 +12,25 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	if (str == NULL)
+	list_t *new_node;
+	unsigned long int len = 0;
+
+	for (; str[len] != '\0'; len++)
+
+	new_node = (list_t *)malloc(sizeof(list_t));
+	if (new_node == NULL)
 	return (NULL);
 
-	list_t *new_element = malloc(sizeof(list_t));
-
-	if (new_element == NULL)
-
-		return (NULL);
-
-	new_element->str = strdup(str);
-	if (new_element->str == NULL)
+	new_node->str = strdup(str);
+	if (new_node->str == NULL)
 	{
-	free(new_element);
+	free(new_node);
 	return (NULL);
 	}
 
-	new_element->len = strlen(str);
-	new_element->next = *head;
-	*head = new_element;
+	new_node->len = len;
+	new_node->next = *head;
+	*head = new_node;
 
-	return (new_element);
+	return (new_node);
 }
