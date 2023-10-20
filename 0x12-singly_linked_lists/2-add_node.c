@@ -13,7 +13,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-	unsigned long int len = 0;
+	unsigned len = 0;
 
 	for (; str[len] != '\0'; len++)
 
