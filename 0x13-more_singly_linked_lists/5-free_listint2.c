@@ -13,9 +13,9 @@ listint_t *tempo;
 
 	while (*head)
 {
-	temp = (*head)->next;
+	tempo = (*head)->next;
 	free(*head);
-	*head = temp;
+	*head = tempo;
 }
 
 	*head = NULL;
